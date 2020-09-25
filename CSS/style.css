@@ -1,0 +1,152 @@
+:root {
+    --color-violet: hsl(257, 40%, 49%); }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: url(../images/bg-mobile.svg), var(--color-violet);
+    background-size: cover ;
+    display: inline;
+    color: white;
+    
+    
+}
+
+header {
+    display: flex;
+    margin-left: 30px;
+    align-items: inherit;
+}
+
+.header-image-logo {
+    width: 130px;
+    height: 100px;
+}
+
+.main-image-box {
+    display: flex;
+    justify-items: center;
+    justify-content: center;   
+}
+
+.main-image-box img {
+   width: 80%;
+   padding-top: 5%;
+}
+
+
+.main-title {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.main-description {
+    max-width: 99%;
+   font-size: 1.7rem; 
+   font-family: 'Open Sans', sans-serif;
+   text-align: center;
+   padding-top: 10px;
+
+
+}
+
+.buttom-register {
+    text-align: center;
+    
+}
+
+.buttom-register button{
+    background-color:whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+    
+    font-weight: 400;
+	border-radius: 40px;
+    border:2px solid white;
+    display: inline-block;
+	cursor:pointer;
+	color: var(--color-violet);
+    font: size 1.5rem;
+    margin-top: 30px;
+	padding:8px 65px;
+	text-decoration:none;
+   
+    
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 60px;
+}
+#icon {
+    
+    width: 29px;
+    height: 29px;
+}
+
+.attribution {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    
+}
+
+
+@media screen and (min-width: 800px){
+    body {
+    background: url(../images/bg-desktop.svg), var(--color-violet);
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+    .main-image-box {
+        width: 55%;
+        position: absolute;
+    }
+
+    .main-title {
+        position: relative;
+        text-align: right;
+        margin-right: 15%;
+    }
+
+    .main-description p {
+        justify-items: center;
+        text-align: right;
+        width: 90%;
+        height: 10%;
+       
+    }
+
+    .buttom-register {
+        position: relative;
+        margin-left: 53%;
+        margin-top: %;
+        
+
+    }
+
+    .social-media {
+        position: relative;
+        text-align: right;
+        margin-right: 8%;
+        
+    }
+
+    .attribution{
+        display: none;
+    }
+
+    
+
+
+}
